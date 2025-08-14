@@ -1,0 +1,42 @@
+<% layout("/layouts/boilerplate.ejs") %>
+<div class="row mt-3">
+    <div class="col-8 offset">
+        <h2>Create a new listing</h2>
+        <form method="post" action="/listings" enctype="multipart/form-data">
+            <div class="mb-3">
+                <label for="title" class="form-label">Title</label> <br>
+                <input type="text" name="listing[title]" placeholder="Add a Catchy title">
+            </div>
+
+
+            <div class="mb-3">
+                <label for="description" class="form-label">description</label>
+                <textarea name="listing[description]" class="form-control"></textarea>
+            </div>
+
+            <div class="mb-3">
+                <label for="image" class="form-label">Upload Listing Image</label>
+                <input type="file" name="listing[image]" class="form-control" required>
+            </div>
+
+            <div class="row">
+                <div class="mb-3 col-md-4">
+                    <label for="price" class="form-label">Price</label>
+                    <input type="number" name="listing[price]" placeholder="1200" class="form-control">
+                </div>
+    
+                <div class="mb-3 col-md-8">
+                    <label for="country" class="form-label">Country</label>
+                    <input type="text" name="listing[country]" placeholder="India" class="form-control">
+                </div>
+
+            </div>
+
+            <div class="mb-3">
+                <label for="location" class="form-label">location</label>
+                <input type="text" name="listing[location]" placeholder="Jaipur , Rajasthan" class="form-control">
+            </div>
+            <button class="btn btn-dark add-btn mt-3">Submit</button>
+        </form>
+    </div>
+</div>
