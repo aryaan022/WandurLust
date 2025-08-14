@@ -64,9 +64,9 @@ const Sessionoption = {
 }
 
 
-// app.get("/", (req, res) => {
-//     res.send("Welcome to Wanderlust");
-// });
+app.get("/", (req, res) => {
+    res.redirect("/listings");
+});
 
 //session adn flash
 app.use(Session(Sessionoption));
