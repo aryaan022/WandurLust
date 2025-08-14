@@ -78,6 +78,6 @@ Build WandurLust from the source and install dependencies:
 ### Usage
 
 Run the project with:
-Using `npm`:
+Using `node`:
 ```bash
 node app.js
